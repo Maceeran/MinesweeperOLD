@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div id="btnDiv">
+            <table id="scoreTable"></table>
+            <table id="gameTable"></table>
+        </div>
+        <form id="form">
+            <div>
+                Dimensions of the minefield<br>
+                Height:<br>
+                <input type="text" id="height" value=20><br>
+                Width:<br>
+                <input type="text" id="width" value=20><br>
+                Mine rate(range: 0.0 - 1.0):<br>
+                <input type="text" id="minerate" value=0.2>
+                <br>
+                <br>
+            </div>
+        </form>
+        <div id="btnDiv">
+            <button onclick="fillTable()" id="button">Submit</button>
+        </div>
+    </body>
+</html>
